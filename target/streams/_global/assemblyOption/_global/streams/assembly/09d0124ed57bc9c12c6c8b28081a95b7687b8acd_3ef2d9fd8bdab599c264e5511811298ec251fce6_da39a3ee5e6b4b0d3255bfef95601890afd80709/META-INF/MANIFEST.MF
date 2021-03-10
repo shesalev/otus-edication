@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: Circe jawn
+Specification-Version: 0.12.2
+Specification-Vendor: io.circe
+Implementation-Title: Circe jawn
+Implementation-Version: 0.12.2
+Implementation-Vendor: io.circe
+Implementation-Vendor-Id: io.circe
+Implementation-URL: https://github.com/circe/circe
+
