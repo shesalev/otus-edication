@@ -3,4 +3,5 @@
 *.json
 .DS_Store
 .idea
+.bsp
 target
