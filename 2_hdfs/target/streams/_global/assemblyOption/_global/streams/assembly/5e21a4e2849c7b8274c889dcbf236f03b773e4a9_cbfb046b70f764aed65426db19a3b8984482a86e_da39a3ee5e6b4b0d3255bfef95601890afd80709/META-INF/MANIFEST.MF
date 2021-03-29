@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.fasterxml.jackson.jaxrs.json
+Bnd-LastModified: 1544916612563
+Build-Jdk: 1.8.0_162
+Built-By: tatu
+Bundle-Description: Functionality to handle JSON input/output for JAX-
+ RS implementations (like Jersey and RESTeasy) using standard Jackson 
+ data binding.
+Bundle-DocURL: http://github.com/FasterXML/jackson-jaxrs-providers/jac
+ kson-jaxrs-json-provider
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Jackson-JAXRS-JSON
+Bundle-SymbolicName: com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-pr
+ ovider
+Bundle-Vendor: FasterXML
+Bundle-Version: 2.9.8
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.fasterxml.jackson.jaxrs.json;version="2.9.8";uses:
+ ="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.faste
+ rxml.jackson.databind.cfg,com.fasterxml.jackson.jaxrs.base,com.faster
+ xml.jackson.jaxrs.cfg,com.fasterxml.jackson.jaxrs.json.annotation,jav
+ ax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext",com.fasterxml.jackson.jaxr
+ s.json.annotation;version="2.9.8";uses:="com.fasterxml.jackson.annota
+ tion,com.fasterxml.jackson.databind"
+Implementation-Build-Date: 2018-12-15 23:29:38+0000
+Implementation-Title: Jackson-JAXRS-JSON
+Implementation-Vendor: FasterXML
+Implementation-Vendor-Id: com.fasterxml.jackson.jaxrs
+Implementation-Version: 2.9.8
+Import-Package: javax.ws.rs;version="[2.0,2.2)",javax.ws.rs.core;versi
+ on="[2.0,2.2)",javax.ws.rs.ext;version="[2.0,2.2)",com.fasterxml.jack
+ son.module.jaxb;resolution:=optional;version="[2.9,3)",com.fasterxml.
+ jackson.annotation;version="[2.9,3)",com.fasterxml.jackson.core;versi
+ on="[2.9,3)",com.fasterxml.jackson.core.util;version="[2.9,3)",com.fa
+ sterxml.jackson.databind;version="[2.9,3)",com.fasterxml.jackson.data
+ bind.cfg;version="[2.9,3)",com.fasterxml.jackson.databind.introspect;
+ version="[2.9,3)",com.fasterxml.jackson.databind.util;version="[2.9,3
+ )",com.fasterxml.jackson.jaxrs.base;version="[2.9,3)",com.fasterxml.j
+ ackson.jaxrs.cfg;version="[2.9,3)",com.fasterxml.jackson.jaxrs.json.a
+ nnotation;version="[2.9,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Specification-Title: Jackson-JAXRS-JSON
+Specification-Vendor: FasterXML
+Specification-Version: 2.9.8
+Tool: Bnd-3.2.0.201605172007
+X-Compile-Source-JDK: 1.7
+X-Compile-Target-JDK: 1.7

@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1543804605344
+Build-Jdk: 1.8.0_191
+Built-By: cam
+Bundle-Description: High-level API that greatly simplifies using ZooKeep
+ er.
+Bundle-DocURL: http://www.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Curator Framework
+Bundle-SymbolicName: curator-framework
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.13.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.curator.framework.imps;uses:="org.apache.zook
+ eeper.data,org.apache.curator.framework.api,com.google.common.collect,o
+ rg.apache.zookeeper,org.apache.curator.drivers,org.apache.curator,org.a
+ pache.curator.utils,org.apache.curator.framework,com.google.common.base
+ ,org.apache.curator.framework.api.transaction,org.apache.curator.framew
+ ork.state,org.slf4j,org.apache.curator.framework.listen,org.apache.cura
+ tor.ensemble,com.google.common.cache";version="2.13.0",org.apache.curat
+ or.framework.api.transaction;uses:="com.google.common.base,org.apache.z
+ ookeeper.data,org.apache.curator.framework.api";version="2.13.0",org.ap
+ ache.curator.framework;uses:="org.apache.curator,org.apache.curator.fra
+ mework.imps,org.apache.curator.utils,org.apache.curator.framework.api.t
+ ransaction,org.apache.zookeeper,org.apache.curator.framework.api,org.ap
+ ache.curator.framework.state,org.apache.curator.framework.listen,org.ap
+ ache.curator.ensemble.fixed,org.apache.curator.ensemble,com.google.comm
+ on.collect";version="2.13.0",org.apache.curator.framework.api;uses:="or
+ g.apache.curator.utils,org.apache.zookeeper.data,org.apache.curator.fra
+ mework,org.apache.zookeeper";version="2.13.0",org.apache.curator.framew
+ ork.state;uses:="org.apache.curator.framework,com.google.common.base,or
+ g.slf4j,org.apache.curator.utils,org.apache.curator.framework.listen";v
+ ersion="2.13.0",org.apache.curator.framework.listen;uses:="org.slf4j,or
+ g.apache.curator.utils,com.google.common.base,com.google.common.util.co
+ ncurrent,com.google.common.collect";version="2.13.0"
+Import-Package: com.google.common.base;version="[16.0,17)",com.google.co
+ mmon.cache;version="[16.0,17)",com.google.common.collect;version="[16.0
+ ,17)",com.google.common.util.concurrent;version="[16.0,17)",org.apache.
+ curator;version="[2.13,3)",org.apache.curator.drivers;version="[2.13,3)
+ ",org.apache.curator.ensemble;version="[2.13,3)",org.apache.curator.ens
+ emble.fixed;version="[2.13,3)",org.apache.curator.utils;version="[2.13,
+ 3)",org.apache.zookeeper;version="[3.4,4)",org.apache.zookeeper.data;ve
+ rsion="[3.4,4)",org.slf4j;version="[1.7,2)"
+Tool: Bnd-1.50.0

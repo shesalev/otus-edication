@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/rualouw/Dev/git/otus/otus-edication/2_hdfs/src/main/resources/hdfs-site.xml,/Users/rualouw/Dev/git/otus/otus-edication/2_hdfs/target/scala-2.12/classes/hdfs-site.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/rualouw/Dev/git/otus/otus-edication/2_hdfs/src/main/resources/core-site.xml,/Users/rualouw/Dev/git/otus/otus-edication/2_hdfs/target/scala-2.12/classes/core-site.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/rualouw/Dev/git/otus/otus-edication/2_hdfs/src/main/resources/log4j.properties,/Users/rualouw/Dev/git/otus/otus-edication/2_hdfs/target/scala-2.12/classes/log4j.properties)[0m

@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven Bundle Plugin
+Built-By: joakim
+Build-Jdk: 9.0.4
+Implementation-Vendor: Eclipse.org - Jetty
+Implementation-Version: 9.3.24.v20180605
+url: http://www.eclipse.org/jetty
+Bnd-LastModified: 1528219286489
+Bundle-Classpath: .
+Bundle-Copyright: Copyright (c) 2008-2017 Mort Bay Consulting Pty. Ltd
+ .
+Bundle-Description: Jetty module for Jetty :: Webapp Application Suppo
+ rt
+Bundle-DocURL: http://www.eclipse.org/jetty
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: Jetty :: Webapp Application Support
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: org.eclipse.jetty.webapp
+Bundle-Vendor: Eclipse Jetty Project
+Bundle-Version: 9.3.24.v20180605
+Export-Package: org.eclipse.jetty.webapp;version="9.3.24";uses:="javax
+ .servlet,org.eclipse.jetty.security,org.eclipse.jetty.server,org.ecli
+ pse.jetty.server.handler,org.eclipse.jetty.server.session,org.eclipse
+ .jetty.servlet,org.eclipse.jetty.util,org.eclipse.jetty.util.annotati
+ on,org.eclipse.jetty.util.resource,org.eclipse.jetty.xml"
+Import-Package: javax.servlet;version="[2.6.0,3.2)",javax.servlet.desc
+ riptor;version="[2.6.0,3.2)",javax.servlet.http;version="[2.6.0,3.2)"
+ ,org.eclipse.jetty.http;version="[9.3.24,9.3.25)",org.eclipse.jetty.h
+ ttp.pathmap;version="[9.3.24,9.3.25)",org.eclipse.jetty.security;vers
+ ion="[9.3.24,9.3.25)",org.eclipse.jetty.server;version="[9.3.24,9.3.2
+ 5)",org.eclipse.jetty.server.handler;version="[9.3.24,9.3.25)",org.ec
+ lipse.jetty.server.session;version="[9.3.24,9.3.25)",org.eclipse.jett
+ y.servlet;version="[9.3.24,9.3.25)",org.eclipse.jetty.util;version="[
+ 9.3.24,9.3.25)",org.eclipse.jetty.util.annotation;version="[9.3.24,9.
+ 3.25)",org.eclipse.jetty.util.component;version="[9.3.24,9.3.25)",org
+ .eclipse.jetty.util.log;version="[9.3.24,9.3.25)",org.eclipse.jetty.u
+ til.resource;version="[9.3.24,9.3.25)",org.eclipse.jetty.util.securit
+ y;version="[9.3.24,9.3.25)",org.eclipse.jetty.xml;version="[9.3.24,9.
+ 3.25)",org.xml.sax
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.0.0.201509101326
+

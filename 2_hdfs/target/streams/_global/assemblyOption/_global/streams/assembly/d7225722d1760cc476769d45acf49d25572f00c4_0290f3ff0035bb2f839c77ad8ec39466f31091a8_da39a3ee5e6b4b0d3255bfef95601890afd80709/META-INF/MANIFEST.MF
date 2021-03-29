@@ -1,0 +1,62 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Build-Date: ${timestamp}
+Bundle-SymbolicName: com.nimbusds.nimbus-jose-jwt
+Build-Number: ${buildNumber}
+Archiver-Version: Plexus Archiver
+Built-By: vd
+Bnd-LastModified: 1502427430710
+Specification-Title: Nimbus JOSE+JWT
+Implementation-Vendor-Id: com.nimbusds
+Bundle-DocURL: http://connect2id.com
+Import-Package: javax.crypto,javax.crypto.spec,net.jcip.annotations,ne
+ t.minidev.json;version="[2.3,3)",net.minidev.json.parser;version="[2.
+ 3,3)",org.bouncycastle.asn1;version="[1.57,2)";resolution:=optional,o
+ rg.bouncycastle.asn1.x509;version="[1.57,2)";resolution:=optional,org
+ .bouncycastle.cert.jcajce;version="[1.57,2)";resolution:=optional,org
+ .bouncycastle.crypto;version="[1.57,2)";resolution:=optional,org.boun
+ cycastle.crypto.engines;version="[1.57,2)";resolution:=optional,org.b
+ ouncycastle.crypto.modes;version="[1.57,2)";resolution:=optional,org.
+ bouncycastle.crypto.params;version="[1.57,2)";resolution:=optional,or
+ g.bouncycastle.jce.provider;version="[1.57,2)";resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Export-Package: com.nimbusds.jose;uses:="com.nimbusds.jose.jca,com.nim
+ busds.jose.jwk,com.nimbusds.jose.util,com.nimbusds.jwt,net.jcip.annot
+ ations,net.minidev.json";version="4.41.1",com.nimbusds.jose.crypto;us
+ es:="com.nimbusds.jose,com.nimbusds.jose.jca,com.nimbusds.jose.jwk,co
+ m.nimbusds.jose.util,javax.crypto,net.jcip.annotations";version="4.41
+ .1",com.nimbusds.jose.crypto.bc;uses:="org.bouncycastle.jce.provider"
+ ;version="4.41.1",com.nimbusds.jose.crypto.factories;uses:="com.nimbu
+ sds.jose,com.nimbusds.jose.jca,com.nimbusds.jose.proc,net.jcip.annota
+ tions";version="4.41.1",com.nimbusds.jose.crypto.utils;version="4.41.
+ 1",com.nimbusds.jose.jca;uses:="com.nimbusds.jose";version="4.41.1",c
+ om.nimbusds.jose.jwk;uses:="com.nimbusds.jose,com.nimbusds.jose.util,
+ javax.crypto,net.jcip.annotations,net.minidev.json";version="4.41.1",
+ com.nimbusds.jose.jwk.source;uses:="com.nimbusds.jose,com.nimbusds.jo
+ se.jwk,com.nimbusds.jose.proc,com.nimbusds.jose.util,javax.crypto,net
+ .jcip.annotations";version="4.41.1",com.nimbusds.jose.proc;uses:="com
+ .nimbusds.jose,com.nimbusds.jose.jwk,com.nimbusds.jose.jwk.source,net
+ .jcip.annotations";version="4.41.1",com.nimbusds.jose.util;uses:="com
+ .nimbusds.jose,net.jcip.annotations,net.minidev.json";version="4.41.1
+ ",com.nimbusds.jwt;uses:="com.nimbusds.jose,com.nimbusds.jose.util,ne
+ t.jcip.annotations,net.minidev.json";version="4.41.1",com.nimbusds.jw
+ t.proc;uses:="com.nimbusds.jose,com.nimbusds.jose.proc,com.nimbusds.j
+ wt,net.jcip.annotations";version="4.41.1",com.nimbusds.jwt.util;versi
+ on="4.41.1"
+Bundle-Name: Nimbus JOSE+JWT
+Build-Tag: 4.41.1
+Implementation-Title: Nimbus JOSE+JWT
+Bundle-Description: Java library for Javascript Object Signing and Enc
+ ryption (JOSE) and        JSON Web Tokens (JWT)
+Implementation-Version: 4.41.1
+Specification-Vendor: Connect2id Ltd.
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Connect2id Ltd.
+Tool: Bnd-2.3.0.201405100607
+Implementation-Vendor: Connect2id Ltd.
+Bundle-Version: 4.41.1
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_131
+Specification-Version: 4.41.1
+Implementation-URL: https://bitbucket.org/connect2id/nimbus-jose-jwt
+

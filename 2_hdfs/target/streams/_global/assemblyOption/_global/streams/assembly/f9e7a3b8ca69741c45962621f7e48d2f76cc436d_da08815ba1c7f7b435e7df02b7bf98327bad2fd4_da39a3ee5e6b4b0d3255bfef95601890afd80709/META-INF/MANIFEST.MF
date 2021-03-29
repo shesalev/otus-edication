@@ -1,0 +1,56 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.fasterxml.jackson.module.jaxb
+Bnd-LastModified: 1544911581849
+Build-Jdk: 1.8.0_162
+Built-By: tatu
+Bundle-Description: Support for using JAXB annotations as an alternati
+ ve to "native" Jackson annotations, for configuringdata-binding.
+Bundle-DocURL: https://github.com/FasterXML/jackson-modules-base
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Jackson module: JAXB Annotations
+Bundle-SymbolicName: com.fasterxml.jackson.module.jackson-module-jaxb-
+ annotations
+Bundle-Vendor: FasterXML
+Bundle-Version: 2.9.8
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.fasterxml.jackson.module.jaxb;version="2.9.8";uses
+ :="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fa
+ sterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,com.faste
+ rxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsont
+ ype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databin
+ d.util,javax.xml.bind.annotation,javax.xml.bind.annotation.adapters",
+ com.fasterxml.jackson.module.jaxb.deser;version="2.9.8";uses:="com.fa
+ sterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jac
+ kson.databind.deser.std,javax.activation,javax.xml.parsers,org.w3c.do
+ m",com.fasterxml.jackson.module.jaxb.ser;version="2.9.8";uses:="com.f
+ asterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.ja
+ ckson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.ser.
+ std,javax.activation,org.w3c.dom"
+Implementation-Build-Date: 2018-12-15 22:05:35+0000
+Implementation-Title: Jackson module: JAXB Annotations
+Implementation-Vendor: FasterXML
+Implementation-Vendor-Id: com.fasterxml.jackson.module
+Implementation-Version: 2.9.8
+Import-Package: com.fasterxml.jackson.annotation;version="[2.9,3)",com
+ .fasterxml.jackson.core;version="[2.9,3)",com.fasterxml.jackson.core.
+ util;version="[2.9,3)",com.fasterxml.jackson.databind;version="[2.9,3
+ )",com.fasterxml.jackson.databind.cfg;version="[2.9,3)",com.fasterxml
+ .jackson.databind.deser.std;version="[2.9,3)",com.fasterxml.jackson.d
+ atabind.introspect;version="[2.9,3)",com.fasterxml.jackson.databind.j
+ sonFormatVisitors;version="[2.9,3)",com.fasterxml.jackson.databind.js
+ ontype;version="[2.9,3)",com.fasterxml.jackson.databind.jsontype.impl
+ ;version="[2.9,3)",com.fasterxml.jackson.databind.node;version="[2.9,
+ 3)",com.fasterxml.jackson.databind.ser.std;version="[2.9,3)",com.fast
+ erxml.jackson.databind.type;version="[2.9,3)",com.fasterxml.jackson.d
+ atabind.util;version="[2.9,3)",com.fasterxml.jackson.module.jaxb.dese
+ r;version="[2.9,3)",com.fasterxml.jackson.module.jaxb.ser;version="[2
+ .9,3)",javax.activation,javax.xml.bind,javax.xml.bind.annotation,java
+ x.xml.bind.annotation.adapters,javax.xml.parsers,org.w3c.dom
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Specification-Title: Jackson module: JAXB Annotations
+Specification-Vendor: FasterXML
+Specification-Version: 2.9.8
+Tool: Bnd-3.2.0.201605172007
+X-Compile-Source-JDK: 1.7
+X-Compile-Target-JDK: 1.7

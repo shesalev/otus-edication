@@ -1,0 +1,70 @@
+Manifest-Version: 1.0
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.configuration
+Archiver-Version: Plexus Archiver
+Built-By: britter
+Bnd-LastModified: 1486302314721
+Implementation-Vendor-Id: org.apache
+Specification-Title: Apache Commons Configuration
+Bundle-DocURL: http://commons.apache.org/proper/commons-configuration/
+Include-Resource: properties.dtd=src/main/resources/properties.dtd,Pro
+ pertyList-1.0.dtd=src/main/resources/PropertyList-1.0.dtd,META-INF/LI
+ CENSE.txt=LICENSE.txt,META-INF/NOTICE.txt=NOTICE.txt
+Import-Package: org.apache.commons.beanutils;resolution:=optional,org.
+ apache.commons.codec.binary;resolution:=optional,org.apache.commons.j
+ xpath;resolution:=optional,org.apache.commons.jxpath.ri;resolution:=o
+ ptional,org.apache.commons.jxpath.ri.compiler;resolution:=optional,or
+ g.apache.commons.jxpath.ri.model;resolution:=optional,org.apache.xml.
+ resolver;resolution:=optional,org.apache.xml.resolver.helpers;resolut
+ ion:=optional,org.apache.xml.resolver.readers;resolution:=optional,or
+ g.apache.xml.resolver.tools;resolution:=optional,javax.servlet;resolu
+ tion:=optional,org.apache.commons.jexl2;resolution:=optional,org.apac
+ he.commons.vfs2;resolution:=optional,org.apache.commons.vfs2.provider
+ ;resolution:=optional,org.springframework.beans.factory;resolution:=o
+ ptional,org.springframework.core.env;resolution:=optional,org.springf
+ ramework.core.io;resolution:=optional,org.springframework.util;resolu
+ tion:=optional,javax.naming,javax.sql,javax.xml.parsers,javax.xml.tra
+ nsform,javax.xml.transform.dom,javax.xml.transform.stream,org.apache.
+ commons.lang3,org.apache.commons.lang3.builder,org.apache.commons.lan
+ g3.concurrent,org.apache.commons.lang3.mutable,org.apache.commons.lan
+ g3.text,org.apache.commons.lang3.text.translate,org.apache.commons.lo
+ gging,org.apache.commons.logging.impl,org.w3c.dom,org.xml.sax,org.xml
+ .sax.helpers
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Export-Package: org.apache.commons.configuration2;version="2.1.1",org.
+ apache.commons.configuration2.beanutils;version="2.1.1",org.apache.co
+ mmons.configuration2.builder;version="2.1.1",org.apache.commons.confi
+ guration2.builder.combined;version="2.1.1",org.apache.commons.configu
+ ration2.builder.fluent;version="2.1.1",org.apache.commons.configurati
+ on2.convert;version="2.1.1",org.apache.commons.configuration2.event;v
+ ersion="2.1.1",org.apache.commons.configuration2.ex;version="2.1.1",o
+ rg.apache.commons.configuration2.interpol;version="2.1.1",org.apache.
+ commons.configuration2.io;version="2.1.1",org.apache.commons.configur
+ ation2.plist;version="2.1.1",org.apache.commons.configuration2.reload
+ ing;version="2.1.1",org.apache.commons.configuration2.resolver;versio
+ n="2.1.1",org.apache.commons.configuration2.spring;version="2.1.1",or
+ g.apache.commons.configuration2.sync;version="2.1.1",org.apache.commo
+ ns.configuration2.tree;version="2.1.1",org.apache.commons.configurati
+ on2.tree.xpath;version="2.1.1",org.apache.commons.configuration2.web;
+ version="2.1.1"
+Bundle-Name: Apache Commons Configuration
+Implementation-Title: Apache Commons Configuration
+Bundle-Description: Tools to assist in the reading of configuration/pr
+ eferences files in        various formats
+Implementation-Version: 2.1.1
+Specification-Vendor: The Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-Vendor: The Apache Software Foundation
+Tool: Bnd-3.0.0.201509101326
+Implementation-Vendor: The Apache Software Foundation
+Bundle-Version: 2.1.1
+X-Compile-Target-JDK: 1.6
+Implementation-Build: tags/CONFIGURATION_2_1_1_RC1@r1781755; 2017-02-0
+ 5 13:45:06+0000
+X-Compile-Source-JDK: 1.6
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_112
+Implementation-URL: http://commons.apache.org/proper/commons-configura
+ tion/
+Specification-Version: 2.1.1
+

@@ -1,0 +1,53 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1423654471829
+Build-Id: 1.19 ${buildNumber}
+Build-Jdk: 1.6.0_45
+Built-By: jerseyrobot
+Bundle-Description: Jersey is the open source (under dual CDDL+GPL licen
+ se) JAX-RS (JSR 311)        production quality Reference Implementation
+  for building        RESTful Web services.
+Bundle-DocURL: http://www.oracle.com/
+Bundle-License: http://glassfish.java.net/public/CDDL+GPL_1_1.html, http
+ ://glassfish.java.net/public/CDDL+GPL_1_1.html
+Bundle-ManifestVersion: 2
+Bundle-Name: jersey-client
+Bundle-SymbolicName: com.sun.jersey.client
+Bundle-Vendor: Oracle Corporation
+Bundle-Version: 1.19.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.sun.jersey.api.client.filter;uses:="com.sun.jersey.a
+ pi.client,com.sun.jersey.core.util,javax.ws.rs.core,javax.ws.rs";versio
+ n="1.19.0",com.sun.jersey.api.client.async;uses:="com.sun.jersey.api.cl
+ ient";version="1.19.0",com.sun.jersey.api.client.config;uses:="com.sun.
+ jersey.core.util";version="1.19.0",com.sun.jersey.api.client;uses:="com
+ .sun.jersey.api.client.async,javax.ws.rs.core,com.sun.jersey.client.imp
+ l,com.sun.jersey.api.client.filter,com.sun.jersey.client.proxy,com.sun.
+ jersey.client.impl.async,com.sun.jersey.api.client.config,com.sun.jerse
+ y.core.spi.component.ioc,com.sun.jersey.spi.inject,com.sun.jersey.core.
+ util,com.sun.jersey.core.spi.factory,javax.ws.rs.ext,com.sun.jersey.cor
+ e.spi.component,com.sun.jersey.client.urlconnection,com.sun.jersey.spi,
+ com.sun.jersey.spi.service,com.sun.jersey.core.provider,com.sun.jersey.
+ core.header,com.sun.jersey.core.reflection";version="1.19.0",com.sun.je
+ rsey.client.urlconnection;uses:="javax.net.ssl,com.sun.jersey.api.clien
+ t,javax.ws.rs.core,com.sun.jersey.core.header,com.sun.jersey.spi";versi
+ on="1.19.0",com.sun.jersey.client.impl.async;uses:="com.sun.jersey.api.
+ client.async,com.sun.jersey.api.client";version="1.19.0",com.sun.jersey
+ .client.proxy;uses:="com.sun.jersey.api.client.async,com.sun.jersey.api
+ .client";version="1.19.0",com.sun.jersey.client.impl;uses:="com.sun.jer
+ sey.core.header,com.sun.jersey.api.client,javax.ws.rs.core";version="1.
+ 19.0",com.sun.ws.rs.ext;uses:="com.sun.jersey.core.spi.factory,javax.ws
+ .rs.core";version="1.19.0"
+Implementation-Title: jersey-client
+Implementation-Vendor: Oracle Corporation
+Implementation-Vendor-Id: com.sun.jersey
+Implementation-Version: 1.19
+Import-Package: com.sun.jersey.core.header;version="[1.19,2)",com.sun.je
+ rsey.core.provider;version="[1.19,2)",com.sun.jersey.core.reflection;ve
+ rsion="[1.19,2)",com.sun.jersey.core.spi.component;version="[1.19,2)",c
+ om.sun.jersey.core.spi.component.ioc;version="[1.19,2)",com.sun.jersey.
+ core.spi.factory;version="[1.19,2)",com.sun.jersey.core.util;version="[
+ 1.19,2)",com.sun.jersey.spi;version="[1.19,2)",com.sun.jersey.spi.injec
+ t;version="[1.19,2)",com.sun.jersey.spi.service;version="[1.19,2)",java
+ x.net.ssl,javax.ws.rs;version="[1.1,2)",javax.ws.rs.core;version="[1.1,
+ 2)",javax.ws.rs.ext;version="[1.1,2)"
+Tool: Bnd-1.50.0

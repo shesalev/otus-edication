@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Title: Kerb Simple Kdc
+Implementation-Version: 1.0.1
+Implementation-Vendor-Id: org.apache.kerby
+Built-By: colm
+Build-Jdk: 1.7.0_80
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Kerb Simple Kdc
+Created-By: Apache Maven 3.5.0
+Implementation-URL: http://directory.apache.org/kerby/kerby-kerb/kerb-
+ simplekdc
+Specification-Version: 1.0
+Archiver-Version: Plexus Archiver
+

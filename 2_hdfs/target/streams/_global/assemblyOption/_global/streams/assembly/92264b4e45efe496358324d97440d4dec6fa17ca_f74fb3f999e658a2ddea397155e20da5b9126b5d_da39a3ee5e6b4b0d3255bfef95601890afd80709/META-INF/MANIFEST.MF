@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven Bundle Plugin
+Built-By: joakim
+Build-Jdk: 9.0.4
+Implementation-Vendor: Eclipse.org - Jetty
+Implementation-Version: 9.3.24.v20180605
+url: http://www.eclipse.org/jetty
+Bnd-LastModified: 1528218721901
+Bundle-Classpath: .
+Bundle-Copyright: Copyright (c) 2008-2017 Mort Bay Consulting Pty. Ltd
+ .
+Bundle-Description: Jetty module for Jetty :: Utilities
+Bundle-DocURL: http://www.eclipse.org/jetty
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: Jetty :: Utilities
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: org.eclipse.jetty.util
+Bundle-Vendor: Eclipse Jetty Project
+Bundle-Version: 9.3.24.v20180605
+Export-Package: org.eclipse.jetty.util;version="9.3.24";uses:="javax.s
+ ervlet,javax.servlet.http,org.eclipse.jetty.util.annotation,org.eclip
+ se.jetty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.
+ util.resource,org.eclipse.jetty.util.thread",org.eclipse.jetty.util.a
+ nnotation;version="9.3.24",org.eclipse.jetty.util.component;version="
+ 9.3.24";uses:="org.eclipse.jetty.util.annotation",org.eclipse.jetty.u
+ til.log;version="9.3.24";uses:="org.eclipse.jetty.util.annotation",or
+ g.eclipse.jetty.util.preventers;version="9.3.24";uses:="org.eclipse.j
+ etty.util.component,org.eclipse.jetty.util.log",org.eclipse.jetty.uti
+ l.resource;version="9.3.24",org.eclipse.jetty.util.security;version="
+ 9.3.24";uses:="org.eclipse.jetty.util.resource",org.eclipse.jetty.uti
+ l.ssl;version="9.3.24";uses:="javax.naming,javax.net.ssl,org.eclipse.
+ jetty.util.component,org.eclipse.jetty.util.resource",org.eclipse.jet
+ ty.util.statistic;version="9.3.24",org.eclipse.jetty.util.thread;vers
+ ion="9.3.24";uses:="org.eclipse.jetty.util.annotation,org.eclipse.jet
+ ty.util.component",org.eclipse.jetty.util.thread.strategy;version="9.
+ 3.24";uses:="org.eclipse.jetty.util.thread"
+Import-Package: javax.servlet;version="[2.6.0,3.2)",javax.servlet.http
+ ;version="[2.6.0,3.2)",org.eclipse.jetty.util;version="[9.3.24,9.3.25
+ )",org.eclipse.jetty.util.annotation;version="[9.3.24,9.3.25)",org.ec
+ lipse.jetty.util.component;version="[9.3.24,9.3.25)",org.eclipse.jett
+ y.util.log;version="[9.3.24,9.3.25)",org.eclipse.jetty.util.resource;
+ version="[9.3.24,9.3.25)",org.eclipse.jetty.util.security;version="[9
+ .3.24,9.3.25)",org.eclipse.jetty.util.thread;version="[9.3.24,9.3.25)
+ ",org.eclipse.jetty.util.thread.strategy;version="[9.3.24,9.3.25)",ja
+ vax.imageio,javax.naming,javax.naming.ldap,javax.net.ssl,javax.securi
+ ty.auth.x500,javax.xml.parsers,org.slf4j;version="[1.6,2)";resolution
+ :=optional,org.slf4j.helpers;version="[1.6,2)";resolution:=optional,o
+ rg.slf4j.spi;version="[1.6,2)";resolution:=optional
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.0.0.201509101326
+
