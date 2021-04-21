@@ -1,0 +1,40 @@
+git clone https://github.com/Gorini4/divolte-streamsets-quickstart.git
+
+cd divolte-streamsets-quickstart/
+
+docker-compose up --build -d
+
+docker-compose ps
+
+docker exec -it d9ed7c240f79 /bin/bash
+docker exec -it 6444438959fb /bin/bash
+
+docker-compose down
+
+#######
+
+hdfs dfs -mkdir -p /tmp/hdfs-cli-example
+
+echo "My awesome text!" > example.txt
+
+ls -l
+
+hdfs dfs -put example.txt /tmp/hdfs-cli-example/
+
+hdfs dfs -ls /tmp/hdfs-cli-example
+
+hdfs dfs -cat /tmp/hdfs-cli-example/example.txt
+
+hdfs dfs -cp /tmp/hdfs-cli-example/example.txt /tmp/hdfs-cli-example/example2.txt
+
+hdfs dfs -get /tmp/hdfs-cli-example/example2.txt ./ 
+
+ls -l | grep -i example
+
+hdfs dfs -du -h /tmp/hdfs-cli-example/example.txt
+
+hdfs fsck /tmp/hdfs-cli-example/example.txt -files -blocks -locations
+
+
+# остановка всех контейнеров
+docker stop $(docker ps -a -q)
