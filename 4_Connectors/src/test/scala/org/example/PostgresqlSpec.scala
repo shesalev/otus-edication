@@ -13,6 +13,7 @@ class PostgresqlSpec extends AnyFlatSpec with TestContainerForAll {
   override val containerDef = PostgreSQLContainer.Def()
 
   val testTableName = "users"
+  val partitionSize = 10
 
   "PostgreSQL data source" should "read table" in withContainers { postgresServer =>
     val spark = SparkSession
@@ -21,42 +22,49 @@ class PostgresqlSpec extends AnyFlatSpec with TestContainerForAll {
       .appName("PostgresReaderJob")
       .getOrCreate()
 
-    spark
+    val df = spark
       .read
       .format("org.example.datasource.postgres")
       .option("url", postgresServer.jdbcUrl)
       .option("user", postgresServer.username)
       .option("password", postgresServer.password)
       .option("tableName", testTableName)
+      .option("partitionColumn", "user_id")
+      .option("partitionSize", partitionSize)
       .load()
-      .show()
+
+    assert(df.rdd.getNumPartitions == 5)
+
+    df.show()
 
     spark.stop()
   }
 
-//  "PostgreSQL data source" should "write table" in withContainers { postgresServer =>
-//    val spark = SparkSession
-//      .builder()
-//      .master("local[*]")
-//      .appName("PostgresWriterJob")
-//      .getOrCreate()
-//
-//    import spark.implicits._
-//
-//    val df = (60 to 70).map(_.toLong).toDF("user_id")
-//
-//    df
-//      .write
-//      .format("org.example.datasource.postgres")
-//      .option("url", postgresServer.jdbcUrl)
-//      .option("user", postgresServer.username)
-//      .option("password", postgresServer.password)
-//      .option("tableName", testTableName)
-//      .mode(SaveMode.Append)
-//      .save()
-//
-//    spark.stop()
-//  }
+  "PostgreSQL data source" should "write table" in withContainers { postgresServer =>
+    val spark = SparkSession
+      .builder()
+      .master("local[*]")
+      .appName("PostgresWriterJob")
+      .getOrCreate()
+
+    import spark.implicits._
+
+    val df = (60 to 70).map(_.toLong).toDF("user_id")
+
+    df
+      .write
+      .format("org.example.datasource.postgres")
+      .option("url", postgresServer.jdbcUrl)
+      .option("user", postgresServer.username)
+      .option("password", postgresServer.password)
+      .option("tableName", testTableName)
+      .option("partitionColumn", "user_id")
+      .option("partitionSize", partitionSize)
+      .mode(SaveMode.Append)
+      .save()
+
+    spark.stop()
+  }
 
   override def afterContainersStart(container: Containers): Unit = {
     super.afterContainersStart(container)
